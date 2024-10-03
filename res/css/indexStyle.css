@@ -1,6 +1,8 @@
 * {
     font-family: 'Times New Roman', Times, serif;
     box-sizing: border-box;
+    border-radius: 15px;
+    
 }
 
 a {
@@ -13,6 +15,7 @@ body {
     padding: 0.5em;
     display: flex;
     flex-direction: column;
+    
 }
 
 ul {
@@ -32,7 +35,6 @@ ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-radius: 15px;
     font-size: 1.5em;
     
     
@@ -64,13 +66,16 @@ ul {
 .logo {
     padding: 6px 6px 6px 6px;
 }
-
+.logo img {
+        width: 75px;
+        height: 75px;
+    } 
+    
 .login {
     margin: 30px;
     padding: 10px;
     width: 350px;
     height: 450px;
-    border-radius: 15px;
     background-color: #5f7994;
     text-align: center;
 }
@@ -79,20 +84,19 @@ ul {
     background-color: rgb(255, 255, 255);
     color: black;
     padding: 6px 12px 6px 12px;
-    border-radius: 8px;
     font-size: 20px;
 }
 .container {
     display: flex;
     flex: 1;
     overflow: hidden;
+    padding-top:1%;
+    padding-bottom:1%;
 }
 .sidebar {
     background-color: #e0e0e0;
-    width: 15em;
-    padding: 1em;
+    width: 15%;
     box-sizing: border-box;
-    border-radius: 15px;
 }
 .content {
     flex: 1;
@@ -100,6 +104,48 @@ ul {
     padding: 1em;
     background-color: #fff;
     box-sizing: border-box;
+    display: flex;
+    justify-content: center; 
+    align-items: center;    
+    flex-direction: column;
+}
+.post{
+    background-color: #ededed;
+    width: 85%;
+    box-sizing: border-box;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    padding-top: 1%;
+    padding-left: 3%;
+    padding-right: 3%;
+    margin-bottom: 5%;
+}
+.postHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.postDate {
+    margin-left: auto;
+    padding-right: 3%;
+}
+.logoPost img {
+    width: 40px;
+    height: 40px;
+    
+}
+.postContent{
+    display: block;
+    align-self: center;
+    
+    
+}
+.postPicture{
+    height: fit-content;
+    width: fit-content;
 }
 
 
