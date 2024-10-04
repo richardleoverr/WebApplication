@@ -21,6 +21,8 @@ body {
 ul {
     margin: 0;
     list-style: none;
+    padding-left: 2vw;
+    
     
 }
 
@@ -29,7 +31,6 @@ ul {
     padding-top: .5em;
     padding-bottom: .5em;
     padding-right: 1em;
-    padding-left: 0;
     border: px solid #000000;
     background-color: #959595;
     display: flex;
@@ -43,6 +44,7 @@ ul {
     display: flex; 
     list-style-type: none; 
     margin: 0;
+    
 }
 
 .nav a, .lis {
@@ -54,10 +56,6 @@ ul {
     color: #000000;
 
        }
-.nav .lis{
-    font-weight: bold;
-    padding-left: 5px;
-    }
    
 .largeBox {
     padding: 50px, 50px, 50px, 50px;
@@ -69,7 +67,7 @@ ul {
 .logo img {
     width: 10vw;
     height: auto;
-    max-width: 150px;
+    max-width: 100px;
     min-width: 50px;
 }
 
@@ -124,6 +122,7 @@ ul {
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    padding-left: 2%;
 }
 
 .postDate {
@@ -139,7 +138,7 @@ ul {
 .logoPost img{
     width: 10vw; 
     height: auto; 
-    max-width: 75px; 
+    max-width: 55px; 
     min-width: 10px;
 }
 
@@ -147,17 +146,27 @@ ul {
 .postText {
         text-align: left; 
         width: 100%; 
+        padding-left: 5%;
 }
 .postThumbsup{
     align-self: flex-start;
     margin-bottom: 0.5em;
+    padding-left: 5%;
+    width: 6vw;
+    max-width: 130px;
+    height: auto;
+    
 }
 
 .postPicture{
     height: fit-content;
     width: fit-content;
     max-width: 100%;
+    
 
+}
+.footer{
+    padding-left: 2vw;
 }
 
 
