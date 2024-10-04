@@ -132,6 +132,7 @@ ul {  /* class selector*/
 .postDate {
     margin-left: auto;
     padding-right: 0.5em;
+    font-size: 100%;
 }
 
 .postContent{
