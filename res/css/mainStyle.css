@@ -1,0 +1,39 @@
+* {
+    font-family: 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    line-height: 1.6;
+    margin: 0;
+    padding: 0.5em;
+    display: flex;
+    flex-direction: column;
+}
+
+ul {
+    margin: 0;
+    list-style: none;
+    
+}
+
+.header, .footer {
+    width: 100%;
+    padding-top: .5em;
+    padding-bottom: 60px;
+    padding-right: 1em;
+    padding-left: 0;
+    border: px solid #000000;
+    background-color: #959595;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 15px;
+    font-size: 1.5em;
+    
+    
+}

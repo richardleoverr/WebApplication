@@ -3,26 +3,39 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="res/css/mainStyle.css">
     <link rel="stylesheet" href="res/css/loginStyle.css">
     <title>Main Page</title>
+
+    <script type="text/javascript">
+      function hasText() {
+        let mail = document.getElementById('mail')
+        let password = document.getElementById('password')
+        if (password.value.length > 0 && mail.value.length > 0) {
+          console.log(mail.value.length)
+          document.getElementById('loginButton').disabled = false;
+        } else {
+          document.getElementById('loginButton').disabled = true;
+        }
+      }
+
+    </script>
+
   </head>
   <body>
     <header class="header">
-        <ul class="nav">
-          <li><a href="index.html">Home</a></li>
-        </ul>
-        <a class="logo" href="index.html"><img src="res/images/me.png" width="50" height="50" alt="profile"></a>
+        
     </header>
     <div>
         <div class="login" >
             <h3>Welcome to the... uh... idk</h3>
-            <a class="button" href="login.html">Create an account</a>
+            <input type="button" class="button" id="button" onclick="window.location.href='login.html'" value="Create an account"></input>
             <h4>Login</h4>
             <label for="mail">email/username</label><br>
-            <input type="email" name="user" id="mail"><br>
+            <input type="email" name="user" id='mail' onkeyup="hasText()"><br>
             <label for="password">password</label><br>
-            <input type="password" name="pass" id="password"><br><br>
-            <a class="button" href="index.html">Login</a>
+            <input type="password" name="pass" id='password' onkeyup="hasText()"><br><br>
+            <input type="button" class="button" id='loginButton' disabled value="Login" onclick="window.location.href='index.html'"></input>
 
         
 
