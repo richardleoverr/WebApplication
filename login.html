@@ -8,7 +8,7 @@
     <title>Main Page</title>
 
     <script type="text/javascript">
-      function hasText() {
+      function enableButton() {
         let mail = document.getElementById('mail')
         let password = document.getElementById('password')
         if (password.value.length > 0 && mail.value.length > 0) {
@@ -24,21 +24,19 @@
   </head>
   <body>
     <header class="header">
-        
+        <div>Welcome to the</div>
+        <h1>Fancy pancy website</h1>
     </header>
     <div>
-        <div class="login" >
+        <div id="login">
             <h3>Welcome to the... uh... idk</h3>
             <input type="button" class="button" id="button" onclick="window.location.href='login.html'" value="Create an account"></input>
-            <h4>Login</h4>
+            <h3>Login</h3>
             <label for="mail">email/username</label><br>
-            <input type="email" name="user" id='mail' onkeyup="hasText()"><br>
+            <input type="email" name="user" id='mail' onkeyup="enableButton()"><br>
             <label for="password">password</label><br>
-            <input type="password" name="pass" id='password' onkeyup="hasText()"><br><br>
+            <input type="password" name="pass" id='password' onkeyup="enableButton()"><br><br>
             <input type="button" class="button" id='loginButton' disabled value="Login" onclick="window.location.href='index.html'"></input>
-
-        
-
         </div>
     </div>
 

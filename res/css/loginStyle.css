@@ -23,11 +23,8 @@
     padding: 50px, 50px, 50px, 50px;
 }
 
-.logo {
-    padding: 6px 6px 6px 6px;
-}
 
-.login {
+#login {
     margin: 30px;
     padding: 10px;
     width: 350px;
@@ -54,25 +51,41 @@
     background-color: rgb(150, 150, 150);
 }
 
-.container {
-    display: flex;
-    flex: 1;
-    overflow: hidden;
+div + h1 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-shadow: 2px, 2px, 5px, white;
+    font-style: italic;
 }
-.sidebar {
-    background-color: #e0e0e0;
-    width: 15em;
-    padding: 1em;
-    box-sizing: border-box;
+
+.header, .footer {
+    width: 100%;
+    padding-top: .5em;
+    padding-bottom: 10px;
+    padding-right: 1em;
+    padding-left: 0;
+    border: px solid #000000;
+    background-color: #959595;
     border-radius: 15px;
+    font-size: 1.5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.5em;
 }
-.content {
-    flex: 1;
-    overflow-y: auto;
-    padding: 1em;
-    background-color: #fff;
-    box-sizing: border-box;
+
+header > div {
+    text-align: center;
 }
+
+div h3 {
+    font-size: 20px;
+}
+
+div > p {
+    font-size: 16px;
+}
+
+
 
 
 
