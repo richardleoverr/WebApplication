@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="res/css/addPostStyle.css">
+    <title>Add Post</title>
+</head>
+<body>
+    <header class="header">
+        <ul id="nav">
+            <li><a href="index.html">Home</a></li>
+        </ul>
+        <a class ="logo" href="addPost.html"><img src="res/images/me.png" width="50" height=""50 alt="My picture"></a>
+    </header>
+
+    <div class="container">
+        <form id="postForm" onsubmit="redirect(event)">
+            <div class="form-group">
+                <label for="postBody">Post body</label>
+                <textarea id="postBody" name="postBody" rows="3" placeholder="textarea"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="fileInputLabel">Select file</label>
+                <label for="fileInput" class="file-upload">Choose file</label>
+                <input type="file" id="fileInput" name="file" style="display:none;">
+            </div>
+            <button type="submit" class="btn-submit">Create post</button>
+        </form>
+    </div>
+
+    <script>
+        function redirect(event){
+            event.preventDefault();
+            window.location.href= "index.html";
+        }
+    </script>
+
+
+</body>
+</html>
