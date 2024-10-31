@@ -157,8 +157,8 @@ ul {  /* class selector*/
     align-self: flex-start;
     margin-bottom: 0.5em;
     padding-left: 5%;
-    width: 6vw;
-    max-width: 100px;
+    width: 10vw;
+    max-width: 150px;
     height: auto;
     
 }
