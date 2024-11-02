@@ -2,9 +2,10 @@ window.onload = function() {
 
 
 
-    fetch('res/json/myjson.json')
+    fetch('https://api.jsonbin.io/v3/b/672638fdad19ca34f8c2d641')
         .then((response) => response.json())
-        .then(posts => {
+        .then(data => {
+            const posts = data.record;
             const contentDiv = document.querySelector('.content');
             
             posts.forEach(post => {
