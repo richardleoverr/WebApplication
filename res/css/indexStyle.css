@@ -181,6 +181,26 @@ img ~ p {
     font-style: italic;
 }
 
+/* Dropdown container */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: #f9f9f9;
+    padding: 5px;
+}
+
+.dropdown-content p{
+    color: black;
+    padding: 8px 12px;
+    text-decoration: none;
+    display: block;
+}
 
 
 

@@ -62,10 +62,24 @@ window.onload = function() {
                 postDiv.appendChild(postContent);
 
                 contentDiv.appendChild(postDiv);
+                
             });
 
         });
-
-
-
-}
+        const logo = document.querySelector('.logo');
+        const dropdownContent = document.querySelector('.dropdown-content');
+    
+        if (logo && dropdownContent) {
+            logo.addEventListener('click', function(event) {
+                event.preventDefault();
+                dropdownContent.style.display = dropdownContent.style.display === 'block' ? 'none' : 'block';
+            });
+    
+            // close dropdown if clicked outside
+            window.addEventListener('click', function(event) {
+                if (!logo.contains(event.target) && !dropdownContent.contains(event.target)) {
+                    dropdownContent.style.display = 'none';
+                }
+            });
+        } 
+    }
